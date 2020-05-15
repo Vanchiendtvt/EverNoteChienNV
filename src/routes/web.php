@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+Route::get('/login-google', function() {
+    return Socialite::with('Google')->redirect();
+})->name('loginGoogle');
+
+Route::get('/google-callback', 'Auth\AuthSocialAuthController@loginGoogleCallback')->name('googleCallback');
+
+// facebook login
+Route::get('/login-facebook', function() {
+    return Socialite::with('Facebook')->redirect();
+})->name('loginFacebook');
+
+Route::get('/facebook-callback', 'Auth\AuthSocialAuthController@loginFacebookCallback')->name('facebookCallback');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
