@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\EverNote;
 
 class EverNoteController extends Controller
 {
@@ -13,7 +14,8 @@ class EverNoteController extends Controller
      */
     public function index()
     {
-        //
+        $notes = EverNote::all();
+        return view('evernote.index',compact('notes'));
     }
 
     /**

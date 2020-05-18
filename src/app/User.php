@@ -27,6 +27,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function evernote()
+    {
+        return $this->hasMany(EverNote:class);
+    }
 
     /**
      * The attributes that should be cast to native types.

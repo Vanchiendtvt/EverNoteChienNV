@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::resource('EverNote', 'EverNoteController');
 Route::get('/login-google', function() {
     return Socialite::with('Google')->redirect();
 })->name('loginGoogle');

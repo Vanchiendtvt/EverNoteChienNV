@@ -5,6 +5,9 @@ install:
 	- sudo docker-compose run php php artisan migrate
 	- sudo docker-compose run php php artisan db:seed
 	- docker-compose run php php artisan serve
+start:
+	- sudo docker-compose up -d
+	- docker-compose run php php artisan serve
 stop:
 	- docker-compose stop
 watch:
@@ -17,8 +20,6 @@ migrate:
 	- docker-compose run php php artisan migrate
 go-inside-php-container:
 	- docker-compose exec php sh
-start:
-	- sudo docker-compose up -d
-	- docker-compose run php php artisan serve
+
 	
 
