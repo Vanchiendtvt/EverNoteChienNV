@@ -29,7 +29,7 @@ class User extends Authenticatable
     ];
     public function evernote()
     {
-        return $this->hasMany(EverNote:class);
+        return $this->hasMany(EverNote::class);
     }
 
     /**

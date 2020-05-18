@@ -4,7 +4,7 @@
       <a href="/">EverNote</a>
      
     </div>
-    <div class="sidebar-header">
+    {{-- <div class="sidebar-header">
       <div class="user-pic">
         <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
           alt="User picture">
@@ -19,7 +19,7 @@
           <span>Online</span>
         </span>
       </div>
-    </div>
+    </div> --}}
     <!-- sidebar-header  -->
     <div class="sidebar-search">
       <div>

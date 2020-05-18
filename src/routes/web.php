@@ -31,4 +31,4 @@ Route::get('/login-facebook', function() {
 Route::get('/facebook-callback', 'Auth\AuthSocialAuthController@loginFacebookCallback')->name('facebookCallback');
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/EverNote', 'EverNoteController@index')->name('EverNote.index');

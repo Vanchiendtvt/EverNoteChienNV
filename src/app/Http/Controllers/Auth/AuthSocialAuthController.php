@@ -56,6 +56,6 @@ class AuthSocialAuthController extends Controller
 
     protected function loginAndRedirect($user) {
         Auth::loginUsingId($user->id);
-        return redirect()->to('/home');;
+        return redirect()->to('/EverNote');;
 }
 }
