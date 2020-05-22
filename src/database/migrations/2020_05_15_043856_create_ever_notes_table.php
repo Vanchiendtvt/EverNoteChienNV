@@ -16,7 +16,8 @@ class CreateEverNotesTable extends Migration
         Schema::create('ever_notes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('body');
+            $table->text('body');
+            $table-> BigInteger('user_id')->unsigned();
             $table->timestamps();
         });
     }

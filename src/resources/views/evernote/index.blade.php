@@ -8,9 +8,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    @foreach ($notes as $note)
-
-                    @endforeach
+                <ever-note :notes="{{'notes'}}"></ever-note>
                 </div>
             </div>
         </div>

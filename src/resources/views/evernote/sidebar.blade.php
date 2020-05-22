@@ -4,23 +4,6 @@
       <a href="/">EverNote</a>
      
     </div>
-    {{-- <div class="sidebar-header">
-      <div class="user-pic">
-        <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
-          alt="User picture">
-      </div>
-      <div class="user-info">
-        <span class="user-name">Jhon
-          <strong>Smith</strong>
-        </span>
-        <span class="user-role">Administrator</span>
-        <span class="user-status">
-          <i class="fa fa-circle"></i>
-          <span>Online</span>
-        </span>
-      </div>
-    </div> --}}
-    <!-- sidebar-header  -->
     <div class="sidebar-search">
       <div>
         <div class="input-group">
@@ -40,14 +23,14 @@
           <span>General</span>
         </li>
         <li class="sidebar">
-          <a href="#">
+        <a href="{{route('EverNote.create')}}">
             <i class="fas fa-plus"></i>
             <span>New</span>
           </a>
          
         </li>
         <li class="sidebar">
-          <a href="#">
+        <a href="{{ Route('EverNote.index') }}">
             <i class="far fa-sticky-note"></i>
             <span>All Notes</span>
           </a>
@@ -79,6 +62,4 @@
     </div>
     <!-- sidebar-menu  -->
   </div>
-  <!-- sidebar-content  -->
-
 </nav>

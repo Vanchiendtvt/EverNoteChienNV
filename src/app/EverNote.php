@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class EverNote extends Model
 {
+   protected $fillable = ['title','body'];
     //
     public function user()
     {

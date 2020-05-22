@@ -26,6 +26,8 @@ class EverNoteController extends Controller
     public function create()
     {
         //
+        return view('evernote.showform');
+        
     }
 
     /**
@@ -37,6 +39,8 @@ class EverNoteController extends Controller
     public function store(Request $request)
     {
         //
+        $request->user()->evernote()->create($request->only('title','body'));
+        return redirect()->route('EverNote.index')->with('Success', 'Your note have been submit');
     }
 
     /**
