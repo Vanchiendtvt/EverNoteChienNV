@@ -7,6 +7,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.axios = require('axios');
 
 /**
  * The following block of code may be used to automatically register your
@@ -21,6 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('ever-note', require('./components/Evernote.vue').default);
+Vue.component('create-note', require('./components/Create.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

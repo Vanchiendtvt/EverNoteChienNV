@@ -23,14 +23,14 @@
           <span>General</span>
         </li>
         <li class="sidebar">
-        <a href="{{route('EverNote.create')}}">
+        <a href="{{route('createNote')}}">
             <i class="fas fa-plus"></i>
             <span>New</span>
           </a>
          
         </li>
         <li class="sidebar">
-        <a href="{{ Route('EverNote.index') }}">
+        <a href="{{ Route('allNotes') }}">
             <i class="far fa-sticky-note"></i>
             <span>All Notes</span>
           </a>

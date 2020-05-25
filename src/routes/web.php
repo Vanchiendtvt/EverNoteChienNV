@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('EverNote', 'EverNoteController');
+
+Route::get('/notes', 'NotesController@index')->name("allNotes");
+Route::get('/notes/create', 'NotesController@create')->name("createNote");
+
+
 Route::get('/login-google', function() {
     return Socialite::with('Google')->redirect();
 })->name('loginGoogle');
@@ -31,4 +35,3 @@ Route::get('/login-facebook', function() {
 Route::get('/facebook-callback', 'Auth\AuthSocialAuthController@loginFacebookCallback')->name('facebookCallback');
 
 
-// Route::get('/EverNote', 'EverNoteController@index')->name('EverNote.index');
