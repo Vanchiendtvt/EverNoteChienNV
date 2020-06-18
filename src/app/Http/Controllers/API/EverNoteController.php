@@ -13,4 +13,11 @@ class EverNoteController extends Controller
         $note = EverNote::all();
         return response()->json($note);
     }
+    public function store(Request $request)
+    {
+        $note = new EverNote;
+        dd($request);
+        // $note->title = $request->get()
+
+    }
 }
